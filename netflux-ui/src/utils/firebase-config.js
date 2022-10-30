@@ -1,15 +1,17 @@
 import { initializeApp } from "firebase/app";
-import {getAuth} from "firebase/auth";
+import { getStorage } from "firebase/storage";
+
+
 const firebaseConfig = {
-  apiKey: "AIzaSyCHxd1A6GfrA71GRrYDlbz93acOR_3l3vM",
-  authDomain: "react-netflux.firebaseapp.com",
-  projectId: "react-netflux",
-  storageBucket: "react-netflux.appspot.com",
-  messagingSenderId: "793307063986",
-  appId: "1:793307063986:web:c6e92f2818670567908bab",
-  measurementId: "G-FPTPC4C7XN"
+  apiKey: "AIzaSyB7CK3DKA8xGKrN0kqI5sy05hBvdsYEmos",
+  authDomain: "react-netflux-1c36d.firebaseapp.com",
+  projectId: "react-netflux-1c36d",
+  storageBucket: "react-netflux-1c36d.appspot.com",
+  messagingSenderId: "953461536820",
+  appId: "1:953461536820:web:d1f4ac486aa993671df261"
 };
 
 const app = initializeApp(firebaseConfig);
+const storage = getStorage(app);
 
-export const firebaseAuth = getAuth(app);
+export default storage;
