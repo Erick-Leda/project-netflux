@@ -1,18 +1,19 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
-import Login from './pages/Login';
-import Signup from './pages/Signup';
+import './App.css';
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import Netflux from './pages/Netflux';
+import AddMovie from './pages/AddMovie';
+import ViewMovie from './pages/ViewMovie';
 
 export default function App() {
+
   return (
-    <BrowserRouter>
-        <Routes>
-            <Route path='/login' element={<Login/>}/>
-            <Route path='/signup' element={<Signup/>}/>
-            <Route index element={<Netflux/>}/>
-        </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Netflux />} />
+            <Route path='/addmovie' element={<AddMovie />} />
+            <Route path='/viewmovie' element={<ViewMovie />} />
+          </Routes>
+        </BrowserRouter>
   );
 }

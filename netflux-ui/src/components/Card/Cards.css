@@ -1,0 +1,99 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+  }
+
+:root {
+  --card-bg: rgb(221, 221, 221);
+}
+  
+.Cards {
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--font-color);
+  padding: 100px;
+}
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--sidebar-bg);
+  width: 230px;
+  height: fit-content;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px 50px;
+  box-shadow: 5px 4px 100px 15px rgba(109, 3, 180, 0.39);
+  transition: all 0.5s ease-in-out;
+}
+
+.Card:hover {
+  transform: translateY(-20px);
+  background-color: var(--btn-color-hover);
+  color: var(--btn-color);
+}
+
+.MovieTitle span, .MovieIMDB span, .MovieYear span, .MovieGenre span, .MovieSynopsis span{
+  color: var(--font-color);
+  background-color: transparent;
+}
+
+.MovieInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+}
+
+.MovieTitle {
+  font-size: 30px;
+}
+
+.MovieIMDB {
+  display: flex;
+  align-items: center;
+}
+
+.MovieIMDB box-icon {
+  border: none;
+  width: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.MovieYear {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.MovieGenre {
+  color: var(--btn-color);
+  padding: 2px;
+  text-align: center;
+  width: 50px;
+  background-color: var(--font-color);
+  border-radius: 100px;
+  margin-bottom: 15px;
+}
+
+.MoviePoster {
+  margin: 20px;
+  display: flex;
+  flex-direction: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--card-bg);
+  width: 200px;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.MoviePoster box-icon {
+  width: 50px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  border: none;
+}

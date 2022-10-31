@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --bg-color: rgb(48, 44, 74);
+}
+
+.Main {
+    padding-left: 25vh;
+    width: 100vw;
+    background-color: var(--bg-color);
+}
+

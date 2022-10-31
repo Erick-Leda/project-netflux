@@ -1,0 +1,125 @@
+
+:root {
+    --bg-color: rgb(48, 44, 74);
+}
+
+.Form {
+    color: var(--font-color);
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    height: fit-content;
+    padding-top: 20vh;
+    padding-left: 50vh;
+}
+
+.Form h1 {
+    text-align: left;
+    font-size: 5vh;
+}
+
+.MovieForm {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.MovieInfo {
+    display: flex;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-right: 90px;
+}
+
+form label {
+    text-align: left;
+}
+
+form label input, textarea {
+    display: flex;
+    color: var(--font-color);
+    font-size: 20px;
+    height: 30px;
+    background-color: transparent;
+    border: 0px;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 30px;
+}
+
+form textarea {
+    background-color: transparent;
+}
+
+.SubmitBtn {
+    color: var(--font-color);
+    font-weight: 600;
+    height: 3vh;
+    background-color: var(--btn-color);
+    border: 0px;
+    border-radius: 100px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.SubmitBtn:hover {
+    background-color: var(--btn-color-hover);
+    border-radius: 2px 40px;
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+
+.movie-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 40vh; 
+    border-radius: 2px 45px;
+    margin: 20px;
+    padding: 20px;
+    background-color: var(--4th-color);
+    box-shadow: 5px 4px 100px 15px rgba(109, 3, 180, 0.39);
+    transition: all 0.5s ease-in-out;
+}
+
+.movie-img:hover {
+    transform: translateY(-20px);
+    background-color: var(--global-font-color);
+    color: var(--btn-color);
+}
+
+.movie-poster {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(221, 221, 221);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    height: inherit;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.movie-poster i {
+    font-size: 40px;
+}
+
+.Upload {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 5vh;
+    background-color: transparent;
+}
+
+img {
+    width: cover;
+}
+

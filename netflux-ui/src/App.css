@@ -1,0 +1,15 @@
+* {
+    background-color: rgb(29, 25, 46);
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --sidebar-bg: rgb(25, 19, 59);
+    --font-color: rgb(255, 255, 255);
+    --btn-color: rgb(58, 45, 145);
+    --btn-color-hover:rgb(151, 137, 242);
+    --btn-font-color: rgb(255, 255, 255);
+    --btn-font-size: 16px;
+}
+
