@@ -40,15 +40,15 @@ function MyForm() {
                     <label>Movie Title
                         <input
                             type="text"
-                            name="username"
-                            value={inputs.username || ""}
+                            name="title"
+                            value={inputs.title || ""}
                             onChange={handleChange} />
                     </label>
                     <label> Year of Release
                         <input
                             type="number"
-                            name="yearRelease"
-                            value={inputs.yearRelease || ""}
+                            name="genres"
+                            value={inputs.genres || ""}
                             onChange={handleChange} />
                     </label>
                     <label> IMBD
